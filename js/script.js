@@ -62,8 +62,8 @@ for (let index = 0; index < memberList.length; index++) {
 
 function cardElGen(username, description, userphoto){
   let gridItem =
-  `<div class="card m-2" style="width: 18rem;" >
-    <img src="../img/${userphoto}" class="card-img-top" alt="${username}">
+  `<div class="card m-4 p-0 shadow border-0 rounded-5" style="width: 18rem;" >
+    <img src="../img/${userphoto}" class="card-img-top rounded-5 shadow" alt="${username}">
     <div class="card-body">
       <h5 class="card-title">${username}</h5>
       <p class="card-text">${description}</p>
