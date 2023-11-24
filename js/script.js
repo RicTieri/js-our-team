@@ -16,6 +16,14 @@ for (let index = 0; index < memberList.length; index++) {
 }
 // MILESTONE 2:
 // Stampare le stesse informazioni su DOM sottoforma di stringhe
+const memberListContainer = document.getElementById('member_list');
+
+for (let index = 0; index < memberList.length; index++) {
+  const member = memberList[index];
+  const textLine = document.createElement('p');
+  textLine.innerHTML = 'Name: ' + member.name + '; Role is: ' + member.role + '; Image directory is: ' + member.img_src;
+  memberListContainer.appendChild(textLine)
+}
 // BONUS 1:
 // Trasformare la stringa foto in una immagine effettiva
 // BONUS 2:
